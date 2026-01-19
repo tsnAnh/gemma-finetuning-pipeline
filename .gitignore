@@ -143,3 +143,14 @@ docs/_build/
 # Package managers
 poetry.lock
 Pipfile.lock
+
+# Claude Code
+.claude/
+CLAUDE.md
+AGENTS.md
+
+# Plans and reports
+plans/
+
+# Repomix
+.repomixignore
