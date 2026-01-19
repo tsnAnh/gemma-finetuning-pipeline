@@ -1,0 +1,15 @@
+# Default configuration for Gemma 3 1B finetuning
+# Optimized for RTX 3060 12GB VRAM
+
+model:
+  model_id: "gemma_1b_en"
+  dtype: "bfloat16"  # Required for Gemma 3 (float16 causes overflow)
+  max_sequence_length: 512
+
+lora:
+  rank: 8           # Low rank for memory efficiency
+  alpha: 16         # 2x rank (standard scaling)
+  dropout: 0.05     # Light dropout
+  target_modules:
+    - "q_proj"      # Query projection
+    - "v_proj"      # Value projection

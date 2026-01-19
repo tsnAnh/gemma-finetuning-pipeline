@@ -1,0 +1,39 @@
+# Default training configuration for Gemma 3 1B
+# Optimized for RTX 3060 12GB VRAM
+
+model:
+  model_id: "gemma_1b_en"
+  dtype: "bfloat16"
+  max_sequence_length: 512
+
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "v_proj"
+
+training:
+  # Optimization
+  learning_rate: 0.0002  # 2e-4
+  weight_decay: 0.01
+  warmup_steps: 100
+  max_steps: 500
+
+  # Batching (RTX 3060 optimized)
+  batch_size: 2
+  gradient_accumulation_steps: 4  # Effective batch = 8
+  max_sequence_length: 512
+
+  # Checkpointing
+  output_dir: "./checkpoints"
+  save_steps: 100
+  logging_steps: 10
+
+  # Validation
+  eval_steps: 100
+  early_stopping_patience: 3
+
+  # Reproducibility
+  seed: 42
