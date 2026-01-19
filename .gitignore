@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.pylintrc
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# ML/Data Science specific
+# Model weights & checkpoints
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+saves/
+checkpoints/
+weights/
+models/
+
+# Datasets
+data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+raw_data/
+processed_data/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+.jupyter/
+
+# Experiment tracking
+wandb/
+mlruns/
+.mlflow/
+outputs/
+logs/
+runs/
+
+# TensorFlow/PyTorch
+.tensorflow/
+.keras/
+*.pb
+
+# DVC (Data Version Control)
+.dvc
+.dvc.lock
+dvc.lock
+
+# Credentials & secrets
+secrets/
+credentials.json
+*.key
+*.pem
+config.yaml
+config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+.cache/
+tmp/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Documentation
+site/
+.sphinx/
+docs/_build/
+
+# Package managers
+poetry.lock
+Pipfile.lock
